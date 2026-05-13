@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado Ejercicio 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Resultado Ejercicio 1</h1>
+
+        <p><strong>Nombre del comprador:</strong> {{ nombre }}</p>
+        <p><strong>Edad:</strong> {{ edad }} años</p>
+        <p><strong>Cantidad de tarros:</strong> {{ cantidad }}</p>
+        <p><strong>Total sin descuento:</strong> ${{ total_sin_descuento }}</p>
+        <p><strong>Descuento aplicado:</strong> {{ porcentaje_descuento }}%</p>
+        <p><strong>Total a pagar:</strong> ${{ total_pagar }}</p>
+
+        <a href="/ejercicio1" class="boton">Realizar nuevamente</a>
+        <a href="/" class="volver">Volver al menú</a>
+    </div>
+
+</body>
+</html>
